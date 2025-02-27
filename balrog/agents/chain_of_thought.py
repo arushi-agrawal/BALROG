@@ -1,8 +1,12 @@
 import copy
 import re
+import logging
 
 from balrog.agents.base import BaseAgent
 from balrog.client import LLMClientWrapper
+from balrog.agents.agent_rag_utils import *
+
+logger = logging.getLogger(__name__)
 
 
 class ChainOfThoughtAgent(BaseAgent):
@@ -18,6 +22,8 @@ class ChainOfThoughtAgent(BaseAgent):
         """
         super().__init__(client_factory, prompt_builder)
         self.remember_cot = config.agent.remember_cot
+        self.retriever = NethackWikiSearch(config)
+        self.retriever.load_index()
 
     def act(self, obs, prev_action=None):
         """Generate the next action using chain-of-thought reasoning based on the current observation.
@@ -34,6 +40,20 @@ class ChainOfThoughtAgent(BaseAgent):
 
         self.prompt_builder.update_observation(obs)
 
+        short_term = obs["text"]["short_term_context"]
+        long_term = obs["text"].get("long_term_context", "")
+        query = f"{short_term}".strip()
+
+        logger.info(f"Generated query: {query}")
+        # logger.info(f"Short Term query: {short_term.strip()}")
+        # logger.info(f"Long Term query: {long_term.strip()}")
+
+        retrieved_docs = self.retriever.search(query)
+        logger.info(f"Retrieved {len(retrieved_docs)} documents")
+        logger.info(f"Retrieved docs 1st: {retrieved_docs[0]}")
+        logger.info(f"Retrieved docs 2nd: {retrieved_docs[1]}")
+        logger.info(f"Retrieved docs 3rd: {retrieved_docs[2]}")
+
         messages = self.prompt_builder.get_prompt()
 
         # Add CoT-specific instructions to the prompt
@@ -42,7 +62,20 @@ First think about what's the best course of action step by step.
 Finally, provide a single output action at the end of the message in the form of: ACTION: <action>
         """.strip()
 
+        rag_instructions = """
+        Go through the retrieved documents and consider the information they provide. The documents are there to help you make an informed decision. They have information about game mechanics and optimal strategies. 
+        """
+        rag_instructions += "\n\n" + "Here are the retrieved documents:\n\n"
+        for doc in retrieved_docs:
+            rag_instructions += doc + "\n\n"
+        rag_instructions.strip()
+
+        if messages and messages[-1].role == "user":
+            messages[-1].content += "\n\n" + rag_instructions
+
         messages[-1].content += "\n\n" + cot_instructions
+
+        # logger.info(f"Prompt messages: {messages}")
 
         # Generate the CoT reasoning
         cot_reasoning = self.client.generate(messages)
