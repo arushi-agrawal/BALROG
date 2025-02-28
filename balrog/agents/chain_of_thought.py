@@ -40,27 +40,26 @@ class ChainOfThoughtAgent(BaseAgent):
 
         self.prompt_builder.update_observation(obs)
 
-        short_term = obs["text"]["short_term_context"]
-        long_term = obs["text"].get("long_term_context", "")
-        query = f"{short_term}".strip()
-
-        logger.info(f"Generated query: {query}")
-        # logger.info(f"Short Term query: {short_term.strip()}")
-        # logger.info(f"Long Term query: {long_term.strip()}")
-
-        retrieved_docs = self.retriever.search(query)
-        logger.info(f"Retrieved {len(retrieved_docs)} documents")
-        logger.info(f"Retrieved docs 1st: {retrieved_docs[0]}")
-        logger.info(f"Retrieved docs 2nd: {retrieved_docs[1]}")
-        logger.info(f"Retrieved docs 3rd: {retrieved_docs[2]}")
-
         messages = self.prompt_builder.get_prompt()
 
-        # Add CoT-specific instructions to the prompt
-        cot_instructions = """
-First think about what's the best course of action step by step.
-Finally, provide a single output action at the end of the message in the form of: ACTION: <action>
+        query_instructions = """
+        Look at the inventory and map properly. Now imagine that you have a information rich document for the game NetHack that has information about game mechanics and optimal strategies. The document also has information about the characters in game and the their abilities. It also has information about the weapons or objects that you find in the game.
+        Output a concise 4-5 words sentence of what you would like to get from the document. For example: "fountain", or "defeat a fox?" Reply in the form of: QUESTION: <question>
         """.strip()
+
+        messages[-1].content += "\n\n" + query_instructions
+
+        query_reasoning = self.client.generate(messages)
+        query = self._extract_question(query_reasoning)
+        question = query.reasoning.split("QUESTION:")[-1].strip()
+        logger.info(f"Extracted question: {question}")
+
+        retrieved_docs = self.retriever.search(question)
+        # logger.info(f"Retrieved {len(retrieved_docs)} documents")
+        # logger.info(f"Retrieved docs 1st: {retrieved_docs[0]}")
+        # logger.info(f"Retrieved docs 2nd: {retrieved_docs[1]}")
+        # logger.info(f"Retrieved docs 3rd: {retrieved_docs[2]}")
+
 
         rag_instructions = """
         Go through the retrieved documents and consider the information they provide. The documents are there to help you make an informed decision. They have information about game mechanics and optimal strategies. 
@@ -73,16 +72,20 @@ Finally, provide a single output action at the end of the message in the form of
         if messages and messages[-1].role == "user":
             messages[-1].content += "\n\n" + rag_instructions
 
-        messages[-1].content += "\n\n" + cot_instructions
 
-        # logger.info(f"Prompt messages: {messages}")
+        # Add CoT-specific instructions to the prompt
+        cot_instructions = """
+Now think about what's the best course of action step by step.
+Finally, provide a valid single output action at the end of the message in the form of: ACTION: <action>
+        """.strip()
+
+        messages[-1].content += "\n\n" + cot_instructions
 
         # Generate the CoT reasoning
         cot_reasoning = self.client.generate(messages)
-
-        # Extract the final answer from the CoT reasoning
+        
+        # # Extract the final answer from the CoT reasoning
         final_answer = self._extract_final_answer(cot_reasoning)
-
         return final_answer
 
     def _extract_final_answer(self, reasoning):
@@ -104,3 +107,23 @@ Finally, provide a single output action at the end of the message in the form of
         answer = answer._replace(completion=filter_letters(answer.completion).split("ACTION:")[-1].strip())
 
         return answer
+    
+    def _extract_question(self, reasoning):
+        """Extract the question from the chain-of-thought reasoning response.
+
+        Args:
+            reasoning (LLMResponse): The response containing CoT reasoning and action.
+
+        Returns:
+            str: The question extracted from the reasoning.
+        """
+
+        def filter_letters(input_string):
+            return re.sub(r"[^a-zA-Z\s:]", "", input_string)
+
+        question = copy.deepcopy(reasoning)
+        # self.prompt_builder.update_reasoning(reasoning.completion)
+        question = question._replace(reasoning=question.completion)
+        question = question._replace(completion=filter_letters(question.completion).split("QUESTION:")[-1].strip())
+
+        return question
