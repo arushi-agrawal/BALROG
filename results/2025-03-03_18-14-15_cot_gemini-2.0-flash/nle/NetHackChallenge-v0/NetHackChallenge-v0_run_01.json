@@ -1,0 +1,66 @@
+{
+    "task": "NetHackChallenge-v0",
+    "action_frequency": {
+        "east": 13,
+        "open": 10,
+        "southeast": 12,
+        "south": 8,
+        "north": 1,
+        "search": 13,
+        "kick": 4,
+        "northwest": 2,
+        "west": 7,
+        "southwest": 1,
+        "look": 1,
+        "quaff": 1,
+        "d": 1
+    },
+    "input_tokens": 848298,
+    "output_tokens": 13973,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 74,
+    "failed_candidates": [],
+    "score": 0,
+    "depth": 0,
+    "gold": 0,
+    "experience_level": 0,
+    "time": 0,
+    "dlvl_list": [
+        "Dlvl:1"
+    ],
+    "xplvl_list": [
+        "Xp:1"
+    ],
+    "highest_achievement": null,
+    "progression": 0.0,
+    "end_reason": "RUNNING: died. Killed by a potion of holy water.",
+    "process_num": "ForkProcess-1",
+    "seed": 3710538378,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 5,
+        "max_icl_history": 1000,
+        "cache_icl": false,
+        "embedding_model": "all-MiniLM-L6-v2",
+        "nethack_wiki_index": "faiss.index",
+        "nethack_wiki_store": "processed_wiki_self.json",
+        "top_k": 3
+    },
+    "client": {
+        "client_name": "gemini",
+        "model_id": "gemini-2.0-flash",
+        "base_url": "http://localhost:8080/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 4096
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

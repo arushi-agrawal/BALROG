@@ -1,0 +1,3413 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,open,"Okay, I've reviewed the situation. I'm a wizard on level 1, with a tame kitten nearby. I have a quarterstaff, cloak of magic resistance, wand of secret door detection, rings of fire resistance and conflict, potions, scrolls, and spellbooks.
+
+My primary goal is to explore the dungeon and find the stairs down. I see a food ration to the northeast, which I might want to grab later if I get hungry. There are closed doors to the west-southwest and northeast. I should probably start by exploring the immediate area.
+
+Since there's a closed door to the northeast, I'll try opening it first.
+
+ACTION: open","message:
+In what direction?
+
+language observation:
+horizontal wall near north
+dark area near northeast
+horizontal closed door near westsouthwest
+vertical wall near west and northwest
+large box near northnorthwest
+vertical closed door very near northeast
+vertical wall very near east
+food ration adjacent northeast
+horizontal wall adjacent southeast, south, and southwest
+tame kitten adjacent west
+lichen adjacent northwest
+
+cursor:
+
+(x=19, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(....                                                                        
+  |.....|                                                                       
+  |.....+                                                                       
+  |..F.%|                                                                       
+  |..f@.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:1                                    
+
+",0.0,False
+1,northeast,"Okay, the message is asking for a direction to open the door. Based on the map and language observation, the door I want to open is to the northeast.
+
+ACTION: northeast","message:
+You see no door there.
+
+language observation:
+horizontal wall near north
+dark area near northeast
+horizontal closed door near westsouthwest
+vertical wall near west and northwest
+large box near northnorthwest
+vertical closed door very near northeast
+vertical wall very near east
+food ration adjacent northeast
+horizontal wall adjacent southeast, south, and southwest
+tame kitten adjacent west
+lichen adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=6, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(....                                                                        
+  |.....|                                                                       
+  |.....+                                                                       
+  |..F.%|                                                                       
+  |..f@.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:1                                    
+
+",0.0,False
+2,northeast,"Okay, I tried to open a door to the northeast, but the game said there was no door there. I must have misinterpreted the map or the language observation. Looking at the map again, there's a vertical closed door very near to the northeast. I was probably too far away. I need to move closer to the northeast before trying to open the door again. I will move one step northeast.
+
+ACTION: northeast","message:
+You see here a food ration.
+
+language observation:
+horizontal wall near north and northwest
+horizontal closed door near westsouthwest
+vertical wall near west
+large box near westnorthwest
+dark area very near northeast
+horizontal wall very near south and southwest
+tame kitten very near westsouthwest
+lichen very near west
+vertical closed door adjacent northeast
+vertical wall adjacent east and southeast
+stairs up adjacent southwest
+
+cursor:
+Yourself a wizard
+(x=7, y=8)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(....                                                                        
+  |.....|                                                                       
+  |.....+                                                                       
+  |..F.@|                                                                       
+  |..f<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:2                                    
+
+",0.0,False
+3,open,"Okay, I've moved northeast and now I'm standing next to a food ration. The map shows a vertical closed door adjacent to the northeast. I will now try to open that door.
+
+ACTION: open","message:
+In what direction?
+
+language observation:
+horizontal wall near north and northwest
+horizontal closed door near westsouthwest
+vertical wall near west
+large box near westnorthwest
+dark area very near northeast
+horizontal wall very near south and southwest
+tame kitten very near westsouthwest
+lichen very near west
+vertical closed door adjacent northeast
+vertical wall adjacent east and southeast
+stairs up adjacent southwest
+
+cursor:
+
+(x=19, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(....                                                                        
+  |.....|                                                                       
+  |.....+                                                                       
+  |..F.@|                                                                       
+  |..f<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:2                                    
+
+",0.0,False
+4,northeast,"Okay, I need to open the door to the northeast.
+
+ACTION: northeast","message:
+The door opens.  The kitten bites the lichen. The lichen is killed!
+
+language observation:
+horizontal wall near north and northwest
+horizontal closed door near westsouthwest
+vertical wall near west
+large box near westnorthwest
+dark area very near northeast
+horizontal wall very near south and southwest
+tame kitten very near westsouthwest
+lichen corpse very near west
+vertical open door adjacent northeast
+vertical wall adjacent east and southeast
+stairs up adjacent southwest
+
+cursor:
+Yourself a wizard
+(x=7, y=8)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(....                                                                        
+  |.....|                                                                       
+  |.....-                                                                       
+  |..%.@|                                                                       
+  |..f<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:3                                    
+
+",0.0,False
+5,northeast,"Okay, the door opened, and my kitten killed a lichen. I'm now standing next to an open door leading to a dark area. There's also a staircase up to the southwest.
+
+I feel threatened. This could be due to a failed attempt to read a spellbook, or quaffing a non-blessed potion of monster detection, or casting the spell detect monsters on a level where there are no monsters. I haven't done any of those things, so I'm not sure why I feel threatened. It could be a trap or a monster I can't see.
+
+I should explore the dark area to the northeast, but I'm a bit worried about the ""threatened"" feeling. I have a wand of secret door detection, but I don't think that's relevant here. I could quaff a potion of monster detection, but I don't want to waste it if there are no monsters.
+
+I think the best course of action is to proceed cautiously into the dark area. I'll move northeast one step and see what happens.
+
+ACTION: northeast","message:
+You can't move diagonally into an intact doorway.
+
+language observation:
+horizontal wall near north and northwest
+horizontal closed door near westsouthwest
+vertical wall near west
+large box near westnorthwest
+dark area very near northeast
+horizontal wall very near south and southwest
+tame kitten very near westsouthwest
+lichen corpse very near west
+vertical open door adjacent northeast
+vertical wall adjacent east and southeast
+stairs up adjacent southwest
+
+cursor:
+Yourself a wizard
+(x=7, y=8)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(....                                                                        
+  |.....|                                                                       
+  |.....-                                                                       
+  |..%.@|                                                                       
+  |..f<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:3                                    
+
+",0.0,False
+6,north,"Okay, I can't move diagonally into an intact doorway. That makes sense. I need to move either north or east to go through the open door. I'm still feeling threatened, but I don't know why. The documents suggest it could be a failed attempt to read a spellbook or quaffing a potion of monster detection, but I haven't done either of those things. It could also be variant paranoia, but I don't think that's the case.
+
+Since I can't move diagonally, I'll move north to go through the door.
+
+ACTION: north","message:
+
+
+language observation:
+horizontal wall near north, south, southwest, and northwest
+horizontal closed door near westsouthwest
+vertical wall near west
+large box near westnorthwest
+dark area very near east
+stairs up very near southsouthwest
+lichen corpse very near westsouthwest
+vertical wall adjacent northeast and southeast
+vertical open door adjacent east
+food ration adjacent south
+tame kitten adjacent southwest
+
+cursor:
+Yourself a wizard
+(x=7, y=7)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(....                                                                        
+  |.....|                                                                       
+  |....@-                                                                       
+  |..%f%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:4                                    
+
+",0.0,False
+7,east,"Okay, I'm now at (7,7). I'm still feeling threatened, and I'm not sure why. I've reviewed the documents, and the most likely causes are a failed attempt to read a spellbook or quaffing a non-blessed potion of monster detection. I haven't done either of those things.
+
+I have a ring of conflict, which could be causing the ""threatened"" feeling if there are monsters nearby that are fighting each other. I also have a ring of fire resistance.
+
+I'm standing next to an open door leading east into a dark area. There's a food ration to the south and stairs up to the south-southwest.
+
+I think the best course of action is to explore the dark area to the east. I'll move east one step and see what happens.
+
+ACTION: east","message:
+
+
+language observation:
+vertical wall far west
+horizontal wall near southwest and northwest
+lichen corpse near westsouthwest
+horizontal closed door near westsouthwest
+large box near westnorthwest
+dark area very near northeast and east
+stairs up very near southwest
+vertical wall adjacent north and south
+dark area adjacent southeast
+food ration adjacent southwest
+tame kitten adjacent west
+
+cursor:
+Yourself a wizard
+(x=8, y=7)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(....                                                                        
+  |.....|#                                                                      
+  |....f@#                                                                      
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:5                                    
+
+",0.0,False
+8,east,"Okay, I'm now at (8,7). I'm still feeling threatened, and I'm not sure why. I've reviewed the documents, and the most likely causes are a failed attempt to read a spellbook or quaffing a non-blessed potion of monster detection. I haven't done either of those things.
+
+I have a ring of conflict, which could be causing the ""threatened"" feeling if there are monsters nearby that are fighting each other. I also have a ring of fire resistance.
+
+I'm standing next to an open door leading east into a dark area. There's a food ration to the southwest and stairs up to the southwest.
+
+I think the best course of action is to explore the dark area to the east. I'll move east one step and see what happens.
+
+ACTION: east","message:
+
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+lichen corpse near westsouthwest
+stairs up near westsouthwest
+dark area very near north, northeast, and east
+food ration very near westsouthwest
+dark area adjacent southeast and south
+vertical wall adjacent southwest and northwest
+tame kitten adjacent west
+
+cursor:
+Yourself a wizard
+(x=9, y=7)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(....                                                                        
+  |.....|##                                                                     
+  |.....f@#                                                                     
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:6                                    
+
+",0.0,False
+9,east,"Okay, I'm now at (9,7). I'm still feeling threatened, and I'm not sure why. I've reviewed the documents, and the most likely causes are a failed attempt to read a spellbook or quaffing a non-blessed potion of monster detection. I haven't done either of those things. The documents also mention variant paranoia, but I don't think that's the case.
+
+I have a ring of conflict, which could be causing the ""threatened"" feeling if there are monsters nearby that are fighting each other. I also have a ring of fire resistance.
+
+I'm standing in a dark area. There's a food ration to the westsouthwest and stairs up to the westsouthwest.
+
+I think the best course of action is to continue exploring the dark area. I'll move east one step and see what happens.
+
+ACTION: east","message:
+
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+lichen corpse near westsouthwest
+food ration near westsouthwest
+stairs up near westsouthwest
+horizontal wall near northwest
+dark area very near north, northeast, and east
+vertical open door very near west
+doorway very near northwest
+dark area adjacent southeast, south, and southwest
+tame kitten adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=10, y=7)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....                                                                       
+  |.....|f##                                                                    
+  |.....-#@#                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:7                                    
+
+",0.0,False
+10,remove,"Okay, I'm now at (10,7). I'm still feeling threatened, and I'm not sure why. I've reviewed the documents, and the most likely causes are a failed attempt to read a spellbook or quaffing a non-blessed potion of monster detection. I haven't done either of those things. The documents also mention variant paranoia, but I don't think that's the case.
+
+I have a ring of conflict, which could be causing the ""threatened"" feeling if there are monsters nearby that are fighting each other. I also have a ring of fire resistance.
+
+I'm standing in a dark area. There's a food ration to the westsouthwest and stairs up to the westsouthwest.
+
+I've checked my inventory. I have a blessed +1 quarterstaff, a cloak of magic resistance, a wand of secret door detection, a ring of fire resistance, a ring of conflict, a potion of holy water, a blessed potion of confusion, an uncursed potion of booze, two scrolls of gold detection, a scroll of teleportation, a spellbook of force bolt, and a spellbook of knock.
+
+I'm still feeling threatened, and I'm not sure why. I'm going to try removing the ring of conflict to see if that's the cause.
+
+ACTION: remove","message:
+What do you want to remove? [*]
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+lichen corpse near westsouthwest
+food ration near westsouthwest
+stairs up near westsouthwest
+horizontal wall near northwest
+dark area very near north, northeast, and east
+vertical open door very near west
+doorway very near northwest
+dark area adjacent southeast, south, and southwest
+tame kitten adjacent northwest
+
+cursor:
+
+(x=32, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....                                                                       
+  |.....|f##                                                                    
+  |.....-#@#                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:7                                    
+
+",0.0,False
+11,e,"Okay, I'm at (10,7) and still feeling threatened. I'm going to remove the ring of conflict to see if that's the cause.
+
+The message is ""What do you want to remove? [*]""
+
+I need to select the ring of conflict from my inventory. It's item 'e'.
+
+ACTION: e","message:
+You are not wearing that.
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+lichen corpse near westsouthwest
+food ration near westsouthwest
+stairs up near westsouthwest
+horizontal wall near northwest
+dark area very near north, northeast, and east
+vertical open door very near west
+doorway very near northwest
+dark area adjacent southeast, south, and southwest
+tame kitten adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=10, y=7)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....                                                                       
+  |.....|f##                                                                    
+  |.....-#@#                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:7                                    
+
+",0.0,False
+12,puton,"Okay, I made a mistake. The message says ""You are not wearing that."" I thought I was wearing the ring of conflict, but I'm not. I need to put it on first.
+
+So, the correct action is to put on the ring of conflict.
+
+ACTION: puton","message:
+What do you want to put on? [de or ?*]
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+lichen corpse near westsouthwest
+food ration near westsouthwest
+stairs up near westsouthwest
+horizontal wall near northwest
+dark area very near north, northeast, and east
+vertical open door very near west
+doorway very near northwest
+dark area adjacent southeast, south, and southwest
+tame kitten adjacent northwest
+
+cursor:
+
+(x=39, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....                                                                       
+  |.....|f##                                                                    
+  |.....-#@#                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:7                                    
+
+",0.0,False
+13,e,"Okay, I'm at (10,7) and still feeling threatened. I was going to remove the ring of conflict, but I realized I wasn't wearing it. So, I need to put it on first.
+
+The message is ""What do you want to put on? [de or ?*]""
+
+I need to select the ring of conflict from my inventory. It's item 'e'.
+
+The documents say that wearing the ring of conflict will cause monsters to attack each other, including me. This could explain why I'm feeling threatened.
+
+I'm going to put on the ring of conflict and see if that's the cause of the ""threatened"" feeling. If it is, I'll take it off immediately.
+
+ACTION: e","message:
+Which ring-finger, Right or Left? [rl]
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+lichen corpse near westsouthwest
+food ration near westsouthwest
+stairs up near westsouthwest
+horizontal wall near northwest
+dark area very near north, northeast, and east
+vertical open door very near west
+doorway very near northwest
+dark area adjacent southeast, south, and southwest
+tame kitten adjacent northwest
+
+cursor:
+
+(x=39, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....                                                                       
+  |.....|f##                                                                    
+  |.....-#@#                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:12(12) Pw:8(8) AC:9 Xp:1/0 T:7                                    
+
+",0.0,False
+14,r,"Okay, I'm at (10,7) and still feeling threatened. I was going to remove the ring of conflict, but I realized I wasn't wearing it. So, I need to put it on first.
+
+The message is ""Which ring-finger, Right or Left? [rl]""
+
+I need to choose a finger to put the ring on. It doesn't matter which finger I choose, so I'll choose the right finger.
+
+The documents say that wearing the ring of conflict will cause monsters to attack each other, including me. This could explain why I'm feeling threatened.
+
+I'm going to put on the ring of conflict and see if that's the cause of the ""threatened"" feeling. If it is, I'll take it off immediately.
+
+ACTION: r","message:
+e - an uncursed ring of conflict (on right hand).  The kitten bites! The kitten bites!
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+lichen corpse near westsouthwest
+food ration near westsouthwest
+stairs up near westsouthwest
+horizontal wall near northwest
+dark area very near north, northeast, and east
+vertical open door very near west
+doorway very near northwest
+dark area adjacent southeast, south, and southwest
+tame kitten adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=10, y=7)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....                                                                       
+  |.....|f##                                                                    
+  |.....-#@#                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:8                                     
+
+",0.0,False
+15,remove,"Okay, I put on the ring of conflict, and the kitten immediately started biting me! This confirms that the ring is indeed a ring of conflict. The documents say that wearing the ring will cause monsters to attack each other, including me.
+
+I'm currently at 2 HP. I need to take off the ring of conflict immediately before the kitten kills me.
+
+ACTION: remove","message:
+You were wearing an uncursed ring of conflict (on right hand).
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+lichen corpse near westsouthwest
+food ration near westsouthwest
+stairs up near westsouthwest
+horizontal wall near northwest
+dark area very near north, northeast, and east
+vertical open door very near west
+doorway very near northwest
+dark area adjacent southeast, south, and southwest
+
+cursor:
+Yourself a wizard
+(x=10, y=7)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....                                                                       
+  |.....|###                                                                    
+  |.....-#@#                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:9                                     
+
+",0.0,False
+16,quaff,"Previous plan:
+Okay, I put on the ring of conflict, and the kitten immediately started biting me! This confirms that the ring is indeed a ring of conflict. The documents say that wearing the ring will cause monsters to attack each other, including me.
+
+I'm currently at 2 HP. I need to take off the ring of conflict immediately before the kitten kills me.
+
+I have already removed the ring of conflict.
+
+Now I need to heal. I have a potion of holy water (f), a potion of confusion (g), and a potion of booze (h). Holy water heals, confusion is bad, and booze is probably bad. So I should quaff the holy water.
+
+ACTION: quaff","message:
+What do you want to drink? [fgh or ?*]
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+lichen corpse near westsouthwest
+food ration near westsouthwest
+stairs up near westsouthwest
+horizontal wall near northwest
+dark area very near north, northeast, and east
+vertical open door very near west
+doorway very near northwest
+dark area adjacent southeast, south, and southwest
+
+cursor:
+
+(x=39, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....                                                                       
+  |.....|###                                                                    
+  |.....-#@#                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:9                                     
+
+",0.0,False
+17,f,"Okay, I'm at 2 HP and need to heal. I have a potion of holy water (f), a potion of confusion (g), and a potion of booze (h). The documents confirm that holy water heals (for non-chaotics), confusion is bad, and booze is probably bad. So I should quaff the holy water.
+
+The message is ""What do you want to drink? [fgh or ?*]""
+
+I need to select the potion of holy water from my inventory. It's item 'f'.
+
+ACTION: f","message:
+You feel full of awe.
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+lichen corpse near westsouthwest
+food ration near westsouthwest
+stairs up near westsouthwest
+horizontal wall near northwest
+dark area very near north, northeast, and east
+vertical open door very near west
+doorway very near northwest
+tame kitten adjacent east
+dark area adjacent southeast, south, and southwest
+
+cursor:
+Yourself a wizard
+(x=10, y=7)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....                                                                       
+  |.....|###                                                                    
+  |.....-#@f                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:10                                    
+
+",0.0,False
+18,east,"Previous plan:
+Okay, I'm at 2 HP and need to heal. I have a potion of holy water (f), a potion of confusion (g), and a potion of booze (h). The documents confirm that holy water heals (for non-chaotics), confusion is bad, and booze is probably bad. So I should quaff the holy water.
+
+The message is ""You feel full of awe.""
+
+I quaffed the potion of holy water. The message ""You feel full of awe"" indicates that I was healed. I don't know how much I was healed, but I'm no longer in immediate danger.
+
+Now that I'm no longer in immediate danger, I can focus on exploring the level. I'm currently at (10,7). There's a doorway to the northwest, and dark areas to the north, northeast, east, southeast, south, and southwest. There are stairs up to the southwest.
+
+I should explore the dark areas to find the stairs down. I'll start by exploring the area to the east.
+
+ACTION: east","message:
+You stop.  Your kitten is in the way!
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+lichen corpse near westsouthwest
+food ration near westsouthwest
+stairs up near westsouthwest
+horizontal wall near northwest
+dark area very near north, northeast, and east
+vertical open door very near west
+doorway very near northwest
+dark area adjacent southeast, south, and southwest
+
+cursor:
+Yourself a wizard
+(x=10, y=7)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....                                                                       
+  |.....|###                                                                    
+  |.....-#@#                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:11                                    
+
+",0.0,False
+19,northwest,"Okay, I tried to move east, but my kitten is in the way. I need to move the kitten or go around it. I could try to push the kitten by moving into it again, but that might hurt it. I could also try to lure it away by dropping some food. However, I don't want to waste food.
+
+Looking at the map, there's a doorway to the northwest. I could go through the doorway and explore that area. That might be a better option than trying to move the kitten.
+
+So, I'll go northwest.
+
+ACTION: northwest","message:
+
+
+language observation:
+horizontal closed door far westsouthwest
+large box far westnorthwest
+dark area near east
+stairs up near southwest
+horizontal wall near southwest
+lichen corpse near westsouthwest
+dark area very near north, southeast, and south
+food ration very near southwest
+horizontal wall very near northwest
+dark area adjacent northeast
+vertical open door adjacent southwest
+vertical wall adjacent west
+doorway adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=9, y=6)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|@##                                                                    
+  |.....-###                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:12                                    
+
+",0.0,False
+20,north,"Previous plan:
+Okay, I tried to move east, but my kitten is in the way. I need to move the kitten or go around it. I could try to push the kitten by moving into it again, but that might hurt it. I could also try to lure it away by dropping some food. However, I don't want to waste food.
+
+Looking at the map, there's a doorway to the northwest. I could go through the doorway and explore that area. That might be a better option than trying to move the kitten.
+
+So, I'll go northwest.
+
+I moved northwest. Now I'm at (9,6). I have a doorway to the northwest, a vertical wall to the west, a vertical open door to the southwest, and dark areas to the north, northeast, east, southeast, and south.
+
+I should explore the dark areas to find the stairs down. I'll start by exploring the area to the north.
+
+ACTION: north","message:
+
+
+language observation:
+horizontal closed door far westsouthwest
+large box far west
+vertical wall far west
+dark area near southeast and south
+food ration near southsouthwest
+stairs up near southsouthwest
+lichen corpse near westsouthwest
+dark area adjacent north, northeast, and east
+vertical wall adjacent southwest
+doorway adjacent west
+northeast room corner adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=9, y=5)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....@                                                                      
+  |.....|###                                                                    
+  |.....-###                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:13                                    
+
+",0.0,False
+21,north,"Okay, I'm a wizard on level 1, trying to get as far as possible. I've identified a ring of conflict, quaffed a potion of holy water to heal, and am now at (9,5). I have a doorway to the west, a vertical wall to the southwest, and dark areas to the north, northeast, east, southeast, and south.
+
+The documents are a guide to wizard mode ascension, explore mode, and safe areas. Since I'm not in wizard mode or explore mode, those sections aren't directly relevant. The safe area section is useful in general, but I don't need a safe area right now.
+
+My immediate goal is to explore the level and find the stairs down. I've already explored to the west, so I should explore the dark areas to the north, northeast, east, southeast, and south.
+
+I'll start by moving north.
+
+ACTION: north","message:
+It's solid stone.
+
+language observation:
+horizontal closed door far westsouthwest
+large box far west
+vertical wall far west
+dark area near southeast and south
+food ration near southsouthwest
+stairs up near southsouthwest
+lichen corpse near westsouthwest
+dark area adjacent north, northeast, and east
+vertical wall adjacent southwest
+doorway adjacent west
+northeast room corner adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=9, y=5)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....@                                                                      
+  |.....|###                                                                    
+  |.....-###                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:13                                    
+
+",0.0,False
+22,northeast,"Okay, I'm a wizard on level 1, trying to get as far as possible. I'm at (9,5) and hit a wall to the north. I have a doorway to the west, a vertical wall to the southwest, and dark areas to the northeast, east, southeast, and south.
+
+The documents are about fire resistance. I have a ring of fire resistance in my inventory, but I don't need it right now. Fire resistance is important in Gehennom, but I'm on level 1.
+
+My immediate goal is to explore the level and find the stairs down. I've already explored to the west and north, so I should explore the dark areas to the northeast, east, southeast, and south.
+
+I'll start by moving northeast.
+
+ACTION: northeast","message:
+It's solid stone.
+
+language observation:
+horizontal closed door far westsouthwest
+large box far west
+vertical wall far west
+dark area near southeast and south
+food ration near southsouthwest
+stairs up near southsouthwest
+lichen corpse near westsouthwest
+dark area adjacent north, northeast, and east
+vertical wall adjacent southwest
+doorway adjacent west
+northeast room corner adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=9, y=5)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....@                                                                      
+  |.....|###                                                                    
+  |.....-###                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:13                                    
+
+",0.0,False
+23,east,"Okay, I'm at (9,5) and hit a wall to the north. I have a doorway to the west, a vertical wall to the southwest, and dark areas to the northeast, east, southeast, and south. I have a kitten, a quarterstaff, a cloak of magic resistance, a wand of secret door detection, a ring of fire resistance, a ring of conflict, potions of confusion and booze, scrolls of gold detection and teleportation, and spellbooks of force bolt and knock.
+
+The documents are about monsters. I should be careful of cockatrices, which can petrify me. I should also be careful of mimics, which can paralyze me. I should also be careful of rust monsters, which can rust my equipment.
+
+My immediate goal is to explore the level and find the stairs down. I've already explored to the west and north, so I should explore the dark areas to the northeast, east, southeast, and south.
+
+I tried to move northeast and hit a wall. I'll try moving east.
+
+ACTION: east","message:
+It's solid stone.
+
+language observation:
+horizontal closed door far westsouthwest
+large box far west
+vertical wall far west
+dark area near southeast and south
+food ration near southsouthwest
+stairs up near southsouthwest
+lichen corpse near westsouthwest
+dark area adjacent north, northeast, and east
+vertical wall adjacent southwest
+doorway adjacent west
+northeast room corner adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=9, y=5)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....@                                                                      
+  |.....|###                                                                    
+  |.....-###                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:13                                    
+
+",0.0,False
+24,zap,"Okay, I'm at (9,5) and surrounded by solid stone to the north, northeast, and east. I have a doorway to the west, a vertical wall to the southwest, and dark areas to the southeast and south. I need to find the stairs down.
+
+The documents provide information about secret passages and doors. Since I'm surrounded by solid stone, it's possible there are secret passages nearby. I have a wand of secret door detection, so I should use it to check for secret passages.
+
+ACTION: zap","message:
+What do you want to zap? [c or ?*]
+
+language observation:
+horizontal closed door far westsouthwest
+large box far west
+vertical wall far west
+dark area near southeast and south
+food ration near southsouthwest
+stairs up near southsouthwest
+lichen corpse near westsouthwest
+dark area adjacent north, northeast, and east
+vertical wall adjacent southwest
+doorway adjacent west
+northeast room corner adjacent northwest
+
+cursor:
+
+(x=35, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....@                                                                      
+  |.....|###                                                                    
+  |.....-###                                                                    
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:13                                    
+
+",0.0,False
+25,c,"Okay, I'm at (9,5) and surrounded by solid stone to the north, northeast, and east. I have a doorway to the west, a vertical wall to the southwest, and dark areas to the southeast and south. I need to find the stairs down.
+
+I have a wand of secret door detection, so I should use it to check for secret passages.
+
+The documents confirm that the wand of secret door detection reveals secret doors and corridors within a 13-square radius.
+
+I'll zap the wand of secret door detection.
+
+ACTION: c","message:
+What do you want to zap? [c or ?*]
+
+language observation:
+horizontal closed door far westsouthwest
+large box far west
+vertical wall far west
+invisible creature near eastsoutheast
+dark area near southeast and south
+food ration near southsouthwest
+stairs up near southsouthwest
+lichen corpse near westsouthwest
+dark area adjacent north, northeast, and east
+vertical wall adjacent southwest
+doorway adjacent west
+northeast room corner adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=9, y=5)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....@                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:2(12) Pw:8(8) AC:9 Xp:1/0 T:14                                    
+
+",0.0,False
+26,south,"Okay, I'm at (9,5) and surrounded by solid stone to the north, northeast, and east. I have a doorway to the west, a vertical wall to the southwest, and dark areas to the southeast and south. I need to find the stairs down.
+
+I just zapped a wand of secret door detection, and the message didn't indicate any secret doors. However, I did detect an invisible creature to the east-southeast.
+
+The documents provide information about infravision, invisibility, and see invisible. Infravision allows me to detect warm-blooded or fire-based monsters in the dark. Invisibility makes it harder for monsters to see me. See invisible allows me to see invisible monsters.
+
+Since I detected an invisible creature, I should be cautious. I don't have see invisible, so I can't see it. It could be dangerous.
+
+My immediate goal is still to explore the level and find the stairs down. I've already explored to the west and north, so I should explore the dark areas to the southeast and south.
+
+Since there's an invisible creature to the east-southeast, I'll try moving south first.
+
+ACTION: south","message:
+
+
+language observation:
+horizontal closed door far westsouthwest
+large box far westnorthwest
+dark area near east
+invisible creature near eastsoutheast
+stairs up near southwest
+horizontal wall near southwest
+lichen corpse near westsouthwest
+dark area very near north, southeast, and south
+food ration very near southwest
+horizontal wall very near northwest
+dark area adjacent northeast
+vertical open door adjacent southwest
+vertical wall adjacent west
+doorway adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=9, y=6)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|@##                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:15                                    
+
+",0.0,False
+27,south,"Okay, I'm at (9,6). I have an invisible creature to the east-southeast. I want to explore the dark areas to the southeast and south.
+
+The documents say that invisibility makes it harder for monsters to see me, but I can't see the invisible creature. It could be dangerous.
+
+I'm currently at low health (3/12 HP). I should avoid combat if possible.
+
+I'll move south to explore the dark area. If I encounter the invisible creature, I'll try to teleport away.
+
+ACTION: south","message:
+
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+dark area near north and east
+invisible creature near east
+lichen corpse near westsouthwest
+stairs up near westsouthwest
+dark area very near northeast
+food ration very near westsouthwest
+dark area adjacent southeast and south
+vertical wall adjacent southwest and northwest
+vertical open door adjacent west
+
+cursor:
+Yourself a wizard
+(x=9, y=7)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-@##I                                                                   
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:16                                    
+
+",0.0,False
+28,south,"Okay, I'm at (9,7). I have an invisible creature to the east. I want to explore the dark areas to the southeast and south. I'm at low health (3/12 HP). I should avoid combat if possible.
+
+The documents say that invisibility makes it harder for monsters to see me, but I can't see the invisible creature. It could be dangerous.
+
+I'm currently at low health (3/12 HP). I should avoid combat if possible.
+
+I'll move south to explore the dark area. If I encounter the invisible creature, I'll try to teleport away.
+
+ACTION: south","message:
+It's solid stone.
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+dark area near north and east
+invisible creature near east
+lichen corpse near westsouthwest
+stairs up near westsouthwest
+dark area very near northeast
+food ration very near westsouthwest
+dark area adjacent southeast and south
+vertical wall adjacent southwest and northwest
+vertical open door adjacent west
+
+cursor:
+Yourself a wizard
+(x=9, y=7)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-@##I                                                                   
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:16                                    
+
+",0.0,False
+29,read,"Okay, I'm at (9,7) and surrounded by solid stone to the south. I have an invisible creature to the east. I'm at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+The documents provide information about teleportation. I have a scroll of teleportation in my inventory (j).
+
+Since I'm surrounded by solid stone and there's an invisible creature nearby, it's a good idea to teleport to a safer location. I'm at low health, so I should prioritize safety.
+
+The scroll of teleportation is uncursed, so it will teleport me to a random location within the same level. This is better than nothing, and it might get me out of this dangerous situation.
+
+I'll read the scroll of teleportation.
+
+ACTION: read","message:
+What do you want to read? [ijkl or ?*]
+
+language observation:
+horizontal closed door far westsouthwest
+vertical wall far west
+large box far westnorthwest
+dark area near north and east
+invisible creature near east
+lichen corpse near westsouthwest
+stairs up near westsouthwest
+dark area very near northeast
+food ration very near westsouthwest
+dark area adjacent southeast and south
+vertical wall adjacent southwest and northwest
+vertical open door adjacent west
+
+cursor:
+
+(x=39, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-@##I                                                                   
+  |..%.%|                                                                       
+  |...<.|                                                                       
+  -+-----                                                                       
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:16                                    
+
+",0.0,False
+30,j,"Okay, I'm at (9,7) and surrounded by solid stone to the south. I have an invisible creature to the east. I'm at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have a scroll of teleportation in my inventory (j).
+
+The documents say that teleportation provides a quick escape to a different (often random) location. Since I'm surrounded by solid stone and there's an invisible creature nearby, it's a good idea to teleport to a safer location. I'm at low health, so I should prioritize safety.
+
+The scroll of teleportation is uncursed, so it will teleport me to a random location within the same level. This is better than nothing, and it might get me out of this dangerous situation.
+
+I'll read the scroll of teleportation.
+
+ACTION: j","message:
+As you read the scroll, it disappears.
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:17                                    
+
+",0.0,False
+31,east,"Okay, I teleported. Now I'm at (72,9). I see a newt far south. There are dark areas very near south, west, and northwest, and dark areas adjacent north, northeast, east, southeast, and southwest. There's a horizontal closed door adjacent northwest.
+
+I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+The documents mention newts. They are weak monsters, but I'm at low health, so I should still be careful. Eating a newt corpse can increase my power, but I don't have a newt corpse.
+
+My immediate goal is to explore the area and find a safer location. Since there are dark areas in all directions, I should proceed cautiously.
+
+I'll start by moving east to explore the dark area.
+
+ACTION: east","message:
+It's solid stone.
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:17                                    
+
+",0.0,False
+32,north,"Okay, I teleported to (72,9) and immediately ran into a wall. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+The documents provide information about movement tactics. Since I'm surrounded by dark areas, I should proceed cautiously.
+
+I'll try moving north to explore the dark area. If I encounter a monster, I'll try to teleport away again.
+
+ACTION: north","message:
+It's a wall.
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:17                                    
+
+",0.0,False
+33,zap,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+The documents provide information about safe areas, secret passages, and corridors. I need to find a safe area to regenerate HP and identify potions.
+
+Since I'm surrounded by solid stone, I should try to find a corridor or secret passage. The wand of secret door detection (c) might help.
+
+I'll zap the wand of secret door detection to see if there are any secret passages nearby.
+
+ACTION: zap","message:
+What do you want to zap? [c or ?*]
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=35, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:17                                    
+
+",0.0,False
+34,zap,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+The documents provide information about safe areas, secret passages, and corridors. I need to find a safe area to regenerate HP and identify potions.
+
+Since I'm surrounded by solid stone, I should try to find a corridor or secret passage. The wand of secret door detection (c) might help.
+
+I'll zap the wand of secret door detection to see if there are any secret passages nearby.
+
+ACTION: zap","message:
+You don't have that object. What do you want to zap? [c or ?*]
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=35, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:17                                    
+
+",0.0,False
+35,c,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+The documents provide information about safe areas, secret passages, and corridors. I need to find a safe area to regenerate HP and identify potions.
+
+Since I'm surrounded by solid stone, I should try to find a corridor or secret passage. The wand of secret door detection (c) might help.
+
+I'll zap the wand of secret door detection to see if there are any secret passages nearby.
+
+ACTION: c","message:
+What do you want to zap? [c or ?*]
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:18                                    
+
+",0.0,False
+36,c,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+The documents provide information about safe areas, secret passages, and corridors. I need to find a safe area to regenerate HP and identify potions.
+
+Since I'm surrounded by solid stone, I should try to find a corridor or secret passage. The wand of secret door detection (c) might help.
+
+I'll zap the wand of secret door detection to see if there are any secret passages nearby.
+
+I have the wand of secret door detection (c) with 12 charges.
+
+ACTION: c","message:
+In what direction?
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=19, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:18                                    
+
+",0.0,False
+37,south,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+The documents provide information about safe areas, secret passages, and corridors. I need to find a safe area to regenerate HP and identify potions.
+
+Since I'm surrounded by solid stone, I should try to find a corridor or secret passage. I have the wand of secret door detection (c) with 12 charges.
+
+I'll zap the wand of secret door detection to see if there are any secret passages nearby.
+
+I have the wand of secret door detection (c) with 12 charges.
+
+I need to specify a direction to zap the wand. I'll try zapping it to the south first.
+
+ACTION: south","message:
+You see no door there.
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:18                                    
+
+",0.0,False
+38,kick,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I tried to zap the wand of secret door detection, but I misremembered the command. I need to select the wand first. I have the wand of secret door detection (c) with 12 charges.
+
+I'll try kicking the wall to the east to see if there's a secret door.
+
+ACTION: kick","message:
+In what direction?
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=19, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:18                                    
+
+",0.0,False
+39,kick,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I tried to zap the wand of secret door detection, but I misremembered the command. I need to select the wand first. I have the wand of secret door detection (c) with 12 charges.
+
+I'll try kicking the wall to the east to see if there's a secret door.
+
+The documents say that kicking can expose secret passages sometimes.
+
+ACTION: kick","message:
+What a strange direction!
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:18                                    
+
+",0.0,False
+40,east,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I tried to kick in a direction without specifying it, which resulted in a ""What a strange direction!"" message. I need to specify a direction when kicking.
+
+I'm trying to find a way out of this enclosed space. The documents mention secret passages and corridors. Kicking can sometimes expose secret passages.
+
+I'll try kicking the wall to the east to see if there's a secret door.
+
+ACTION: east","message:
+It's solid stone.
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:18                                    
+
+",0.0,False
+41,wield,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I tried kicking the wall to the east, but it's solid stone.
+
+The documents mention secret passages and corridors. Kicking can sometimes expose secret passages. The documents also mention using the wand of secret door detection.
+
+I have the wand of secret door detection (c) with 12 charges. I should use it to try to find a secret passage.
+
+I'll zap the wand of secret door detection to the south, west, and north.
+
+First, I need to wield the wand.
+
+ACTION: wield","message:
+What do you want to wield? [- a or ?*]
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=39, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:18                                    
+
+",0.0,False
+42,c,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I tried kicking the wall to the east, but it's solid stone.
+
+The documents mention secret passages and corridors. Kicking can sometimes expose secret passages. The documents also mention using the wand of secret door detection.
+
+I have the wand of secret door detection (c) with 12 charges. I should use it to try to find a secret passage.
+
+I'll zap the wand of secret door detection to the south, west, and north.
+
+First, I need to wield the wand. I see the prompt ""What do you want to wield? [- a or ?*]"". The wand of secret door detection is 'c'.
+
+ACTION: c","message:
+c - a wand of secret door detection (0:12) (weapon in hand).
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:19                                    
+
+",0.0,False
+43,zap,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I tried kicking the wall to the east, but it's solid stone.
+
+I have the wand of secret door detection (c) with 12 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages.
+
+I'll zap the wand of secret door detection to the south, west, and north.
+
+ACTION: zap","message:
+What do you want to zap? [c or ?*]
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt far south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=35, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:19                                    
+
+",0.0,False
+44,c,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 12 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages.
+
+I'll zap the wand of secret door detection to the south, west, and north.
+
+I see the prompt ""What do you want to zap? [c or ?*]"". The wand of secret door detection is 'c'.
+
+ACTION: c","message:
+What do you want to zap? [c or ?*]
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:20                                    
+
+",0.0,False
+45,c,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 11 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages. It has a radius of 8 squares.
+
+I'll zap the wand of secret door detection to the south, west, and north.
+
+I see the prompt ""What do you want to zap? [c or ?*]"". The wand of secret door detection is 'c'.
+
+ACTION: c","message:
+In what direction?
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=19, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:20                                    
+
+",0.0,False
+46,south,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 11 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages. It has a radius of 8 squares.
+
+I'll zap the wand of secret door detection to the south, west, and north.
+
+I see the prompt ""In what direction?"". I'll start by zapping south.
+
+ACTION: south","message:
+You see no door there.
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:20                                    
+
+",0.0,False
+47,zap,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 11 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages. It has a radius of 8 squares.
+
+I've already zapped south and found no door. I'll zap the wand of secret door detection to the west, and north.
+
+I see the prompt ""You see no door there."". This means that the wand did not detect a secret door to the south.
+
+ACTION: zap","message:
+What do you want to zap? [c or ?*]
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=35, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:20                                    
+
+",0.0,False
+48,c,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 11 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages. It has a radius of 8 squares.
+
+I've already zapped south and found no door. I'll zap the wand of secret door detection to the west, and north.
+
+I see the prompt ""What do you want to zap? [c or ?*]"". The wand of secret door detection is 'c'.
+
+ACTION: c","message:
+What do you want to zap? [c or ?*]
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:21                                    
+
+",0.0,False
+49,c,"Previous plan:
+Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 10 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages. It has a radius of 8 squares.
+
+I've already zapped south and found no door. I'll zap the wand of secret door detection to the west, and north.
+
+I see the prompt ""What do you want to zap? [c or ?*]"". The wand of secret door detection is 'c'.
+
+The escape document is not relevant to my current situation.
+
+ACTION: c","message:
+In what direction?
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=19, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:21                                    
+
+",0.0,False
+50,west,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 10 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages. It has a radius of 8 squares.
+
+I've already zapped south and found no door. I'll zap the wand of secret door detection to the west, and north.
+
+I see the prompt ""In what direction?"". I'll zap west.
+
+ACTION: west","message:
+You see no door there.
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:21                                    
+
+",0.0,False
+51,zap,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 9 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages. It has a radius of 8 squares.
+
+I've already zapped south and west and found no door. I'll zap the wand of secret door detection to the north.
+
+I see the prompt ""You see no door there."". This means that the wand did not detect a secret door to the west.
+
+ACTION: zap","message:
+What do you want to zap? [c or ?*]
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=35, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:21                                    
+
+",0.0,False
+52,c,"Previous plan:
+Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 9 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages. It has a radius of 8 squares.
+
+I've already zapped south and west and found no door. I'll zap the wand of secret door detection to the north.
+
+I see the prompt ""What do you want to zap? [c or ?*]"". The wand of secret door detection is 'c'.
+
+ACTION: c","message:
+What do you want to zap? [c or ?*]
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:22                                    
+
+",0.0,False
+53,c,"Previous plan:
+Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 9 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages. It has a radius of 8 squares.
+
+I've already zapped south and west and found no door. I'll zap the wand of secret door detection to the north.
+
+I see the prompt ""What do you want to zap? [c or ?*]"". The wand of secret door detection is 'c'.
+
+ACTION: c","message:
+In what direction?
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=19, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:22                                    
+
+",0.0,False
+54,north,"Okay, I'm at (72,9) and surrounded by solid stone to the north and east. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 9 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages. It has a radius of 8 squares.
+
+I've already zapped south and west and found no door. I'll zap the wand of secret door detection to the north.
+
+I see the prompt ""In what direction?"". I'll zap north.
+
+ACTION: north","message:
+You see no door there.
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:22                                    
+
+",0.0,False
+55,search,"Okay, I'm at (72,9) and surrounded by solid stone to the north, east, and west. I'm still at low health (3/12 HP). I need to explore, but I should avoid combat if possible.
+
+I have the wand of secret door detection (c) with 8 charges and it is now wielded. I should use it to try to find a secret passage.
+
+The documents mention that the wand of secret door detection can reveal secret passages. It has a radius of 8 squares.
+
+I've already zapped south, west, and north and found no door. I'm surrounded by solid stone on three sides. The only direction I haven't tried is east, but I already know that there is solid stone there.
+
+I'm running out of options. I could try searching, but that's unlikely to be successful. I could also try reading a scroll of gold detection, but that won't help me find a way out of this room.
+
+I'm going to try searching.
+
+ACTION: search","message:
+
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:23                                    
+
+",0.0,False
+56,search,"Okay, I'm stuck in a small room at (72,9) with solid stone to the north, east, and west. My health is low (3/12 HP). I have a wand of secret door detection with 8 charges. I've already tried zapping it in all directions without success.
+
+The ""Secret passage"" document says that secret passages look and act like solid walls until exposed. It also says that the wand of secret door detection can expose them. I've already tried zapping the wand in all directions, so that's not working.
+
+The document also mentions that searching can expose secret passages. I'm going to try searching repeatedly.
+
+ACTION: search","message:
+
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+newt near south
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        :       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:24                                    
+
+",0.0,False
+57,search,"Okay, I'm stuck in a small room at (72,9) with solid stone to the north, east, and west. My health is low (3/12 HP). I have a wand of secret door detection with 8 charges. I've already tried zapping it in all directions without success.
+
+The ""Secret passage"" document says that secret passages look and act like solid walls until exposed. It also says that the wand of secret door detection can expose them. I've already tried zapping the wand in all directions, so that's not working.
+
+The document also mentions that searching can expose secret passages. I'm going to try searching repeatedly. I've already searched once.
+
+ACTION: search","message:
+
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:25                                    
+
+",0.0,False
+58,search,"Okay, I'm still stuck in the small room at (72,9) with solid stone to the north, east, and west. My health is low (3/12 HP). I have a wand of secret door detection with 8 charges. I've already tried zapping it in all directions without success.
+
+The ""Secret passage"" document says that secret passages look and act like solid walls until exposed. It also says that the wand of secret door detection can expose them. I've already tried zapping the wand in all directions, so that's not working.
+
+The document also mentions that searching can expose secret passages. I'm going to try searching repeatedly. I've already searched twice.
+
+I'm going to keep searching.
+
+ACTION: search","message:
+
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:26                                    
+
+",0.0,False
+59,search,"Okay, I'm still stuck in this small room at (72,9) with solid stone to the north, east, and west. My health is low (3/12 HP). I have a wand of secret door detection with 8 charges. I've already tried zapping it in all directions without success.
+
+The ""Secret passage"" document says that secret passages look and act like solid walls until exposed. It also says that the wand of secret door detection can expose them. I've already tried zapping the wand in all directions, so that's not working.
+
+The document also mentions that searching can expose secret passages. I'm going to try searching repeatedly. I've already searched three times.
+
+I'm going to keep searching. I'm running out of options. I could try kicking, but that could damage my feet. I could also try reading a scroll of gold detection, but that won't help me find a way out of this room.
+
+I'm going to keep searching.
+
+ACTION: search","message:
+
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               #       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:27                                    
+
+",0.0,False
+60,search,"Okay, I'm still stuck in this small room at (72,9) with solid stone to the north, east, and west. My health is low (3/12 HP). I have a wand of secret door detection with 8 charges. I've already tried zapping it in all directions without success.
+
+The ""Secret passage"" document says that secret passages look and act like solid walls until exposed. It also says that the wand of secret door detection can expose them. I've already tried zapping the wand in all directions, so that's not working.
+
+The document also mentions that searching can expose secret passages. I'm going to try searching repeatedly. I've already searched four times.
+
+I'm running out of options. I could try kicking, but that could damage my feet. I could also try reading a scroll of gold detection, but that won't help me find a way out of this room.
+
+I have a spellbook of knock. I could try reading it, but I don't know if it will work on secret passages. The secret passage document says that effects that open doors do not work on secret passages.
+
+I have a spellbook of force bolt. I could try reading it, but I don't think it will help me find a way out of this room.
+
+I'm going to try searching one more time. If that doesn't work, I'm going to try kicking.
+
+ACTION: search","message:
+
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+newt adjacent south
+horizontal closed door adjacent northwest
+
+cursor:
+Yourself a wizard
+(x=72, y=9)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               :       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:28                                    
+
+",0.0,False
+61,kick,"Okay, I'm still stuck in this small room at (72,9) with solid stone to the north, east, and west. My health is low (3/12 HP). I have a wand of secret door detection with 8 charges. I've already tried zapping it in all directions without success.
+
+The ""Secret passage"" document says that secret passages look and act like solid walls until exposed. It also says that the wand of secret door detection can expose them. I've already tried zapping the wand in all directions, so that's not working.
+
+The document also mentions that searching can expose secret passages. I'm going to try searching repeatedly. I've already searched five times.
+
+I'm running out of options. I could try kicking, but that could damage my feet. I could also try reading a scroll of gold detection, but that won't help me find a way out of this room.
+
+I have a spellbook of knock. I could try reading it, but I don't know if it will work on secret passages. The secret passage document says that effects that open doors do not work on secret passages.
+
+I have a spellbook of force bolt. I could try reading it, but I don't think it will help me find a way out of this room.
+
+I'm going to try kicking the east wall. I'm desperate.
+
+ACTION: kick","message:
+In what direction?
+
+language observation:
+horizontal closed door very far westsouthwest
+stairs up very far west
+large box very far westnorthwest
+invisible creature very far westnorthwest
+lichen corpse very far westnorthwest
+food ration very far westnorthwest
+dark area very near south, west, and northwest
+dark area adjacent north, northeast, east, southeast, and southwest
+newt adjacent south
+horizontal closed door adjacent northwest
+
+cursor:
+
+(x=19, y=0)
+
+map:
+                                                                                
+                                                                                
+                                                                                
+  -------                                                                       
+  |(.....#                                                                      
+  |.....|###                                                                    
+  |.....-###I                                                                   
+  |..%.%|                                                              +        
+  |...<.|                                                              #@       
+  -+-----                                                               :       
+                                                                                
+                                                                                
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                        .       
+                                                                       ...      
+                                                                      -----     
+                                                                                
+                                                                                
+Agent the Evoker               St:11 Dx:12 Co:17 In:17 Wi:10 Ch:8 Neutral S:0   
+Dlvl:1 $:0 HP:3(12) Pw:8(8) AC:9 Xp:1/0 T:28                                    
+
+",0.0,False
+62,east,"Okay, I'm still stuck in this small room at (72,9) with solid stone to the north, east, and west. My health is low (3/12 HP).
+
+I've been searching repeatedly, but haven't found anything. I've also tried zapping the wand of secret door detection in all directions without success.
+
+I'm about to try kicking the east wall.
+
+The ""Secret passage"" document says that kicking can expose secret passages sometimes.
+
+I have a wand of secret door detection with 8 charges. I've already tried zapping it in all directions without success.
+
+I have a spellbook of knock. I could try reading it, but I don't know if it will work on secret passages. The secret passage document says that effects that open doors do not work on secret passages.
+
+I have a spellbook of force bolt. I could try reading it, but I don't think it will help me find a way out of this room.
+
+I'm going to try kicking the east wall. I'm desperate.
+
+ACTION: east","message:
+Ouch!  That hurts!  The newt bites!  
+No  Points     Name                                                   Hp [max]
+0  Agent-Wiz-Hum-Fem-Neu died in The Dungeons of Doom on
+level 1.  Killed by a newt.                             -  [12]
+
+
+language observation:
+dark area adjacent east, southeast, and south
+
+cursor:
+very far eastsoutheast 
+(x=77, y=6)
+
+map:
+ No  Points     Name                                                   Hp [max] 
+                                                                                
+            0  Agent-Wiz-Hum-Fem-Neu died in The Dungeons of Doom on            
+                                                                                
+              level 1.  Killed by a newt.                             -  [12]   
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+",0.0,True

@@ -43,26 +43,34 @@ class ChainOfThoughtAgent(BaseAgent):
         messages = self.prompt_builder.get_prompt()
 
         query_instructions = """
-        Look at the inventory and map properly. Now imagine that you have a information rich document for the game NetHack that has information about game mechanics and optimal strategies. The document also has information about the characters in game and the their abilities. It also has information about the weapons or objects that you find in the game.
+        Asses the current situation properly. Now imagine that you have a information rich document for NetHac containing all the things that you encounter in game. 
         Output a concise 4-5 words sentence of what you would like to get from the document. For example: "fountain", or "defeat a fox?" Reply in the form of: QUESTION: <question>
         """.strip()
 
-        messages[-1].content += "\n\n" + query_instructions
+        query_message = copy.deepcopy(messages)
+        if messages and messages[-1].role == "user":
+            query_message[-1].content += "\n\n" + query_instructions
+        # messages[-1].content += "\n\n" + query_instructions
 
-        query_reasoning = self.client.generate(messages)
+        # logger.info(f"Message after asking for query: {query_message}")
+
+        query_reasoning = self.client.generate(query_message)
         query = self._extract_question(query_reasoning)
+        
+        # messages[-1].content.replace(query_instructions, "")
+        # logger.info(f"Message after removing query instructions: {messages}")
         question = query.reasoning.split("QUESTION:")[-1].strip()
         logger.info(f"Extracted question: {question}")
 
         retrieved_docs = self.retriever.search(question)
         # logger.info(f"Retrieved {len(retrieved_docs)} documents")
-        # logger.info(f"Retrieved docs 1st: {retrieved_docs[0]}")
-        # logger.info(f"Retrieved docs 2nd: {retrieved_docs[1]}")
-        # logger.info(f"Retrieved docs 3rd: {retrieved_docs[2]}")
+        # logger.info(f"Retrieved docs 1st: {retrieved_docs[0][:100]}")
+        # logger.info(f"Retrieved docs 2nd: {retrieved_docs[1][:100]}")
+        # logger.info(f"Retrieved docs 3rd: {retrieved_docs[2][:100]}")
 
 
         rag_instructions = """
-        Go through the retrieved documents and consider the information they provide. The documents are there to help you make an informed decision. They have information about game mechanics and optimal strategies. 
+        Now go through the retrieved documents and consider the information they provide. The documents are there to help you make an informed decision.
         """
         rag_instructions += "\n\n" + "Here are the retrieved documents:\n\n"
         for doc in retrieved_docs:
@@ -75,14 +83,15 @@ class ChainOfThoughtAgent(BaseAgent):
 
         # Add CoT-specific instructions to the prompt
         cot_instructions = """
-Now think about what's the best course of action step by step.
-Finally, provide a valid single output action at the end of the message in the form of: ACTION: <action>
+Now think about what's the best course of action step by step. The retrieved documents might not be completely accurate, so use your best judgement.
+Finally, provide a valid single output action (**crosscheck that the output action is a valid action given in the list of actions**) at the end of the message in the form of: ACTION: <action>
         """.strip()
 
         messages[-1].content += "\n\n" + cot_instructions
 
         # Generate the CoT reasoning
         cot_reasoning = self.client.generate(messages)
+        # logger.info(f"Complete message: {messages}")
         
         # # Extract the final answer from the CoT reasoning
         final_answer = self._extract_final_answer(cot_reasoning)

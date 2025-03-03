@@ -1,0 +1,39 @@
+{
+    "average_progress": 0.416232716394871,
+    "standard_error": 0.3722898593273291,
+    "environments": {
+        "nle": {
+            "progression_percentage": 0.416232716394871,
+            "standard_error": 0.3722898593273291,
+            "episodes_played": 5
+        }
+    },
+    "total_input_tokens": 58543859,
+    "total_output_tokens": 1664901,
+    "client": {
+        "client_name": "gemini",
+        "model_id": "gemini-2.0-flash",
+        "base_url": "http://localhost:8080/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 4096
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    },
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 5,
+        "max_icl_history": 1000,
+        "cache_icl": false,
+        "embedding_model": "all-MiniLM-L6-v2",
+        "nethack_wiki_index": "faiss.index",
+        "nethack_wiki_store": "processed_wiki_self.json",
+        "top_k": 3
+    }
+}

@@ -3,7 +3,7 @@ agent:
   remember_cot: True     # Whether the agent should remember its reasoning across turns
   max_history: 16        # Maximum number of previous turns to keep in the dialogue history
   max_image_history: 0   # Maximum number of images to keep in the history
-  max_cot_history: 1     # Maximum number of chain-of-thought steps to keep in history (if using 'cot' type of agent)
+  max_cot_history: 5     # Maximum number of chain-of-thought steps to keep in history (if using 'cot' type of agent)
   max_icl_history: 1000   # Maximum number of ICL steps to keep in history (if using 'few_shot' type of agent)
   cache_icl: False
   embedding_model: "all-MiniLM-L6-v2" # Model to embed RAG query
@@ -89,14 +89,14 @@ tasks:
     - NetHackChallenge-v0       # Tasks for the NLE environment
 
   minihack_tasks:
-    # - "MiniHack-Boxoban-Hard-v0"
-    # - "MiniHack-Boxoban-Medium-v0"
-    # - "MiniHack-MazeWalk-9x9-v0"
-    # - "MiniHack-MazeWalk-15x15-v0"
-    # - "MiniHack-Corridor-R3-v0"
-    # - "MiniHack-CorridorBattle-Dark-v0"
+    - "MiniHack-Boxoban-Hard-v0"
+    - "MiniHack-Boxoban-Medium-v0"
+    - "MiniHack-MazeWalk-9x9-v0"
+    - "MiniHack-MazeWalk-15x15-v0"
+    - "MiniHack-Corridor-R3-v0"
+    - "MiniHack-CorridorBattle-Dark-v0"
     - "MiniHack-Quest-Easy-v0"
-    # - "MiniHack-Quest-Medium-v0"
+    - "MiniHack-Quest-Medium-v0"
 
   crafter_tasks:
     - "default"                 # Tasks for Crafter

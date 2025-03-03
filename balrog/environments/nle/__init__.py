@@ -120,9 +120,14 @@ Tips:
 - If you keep moving in the same direction, you will eventually hit a wall and stop moving. Your message might be: "It's solid stone", or "It's a wall". Change your action to move in another direction to continue exploring the environment.
 - Read the language observation carefully and look at ascii map or image observation provided to decide the next action to take and where to move next.
 - You can attack monsters by moving into them.
+- Do not get stuck trying to engrave Elbereth. It is not always the best strategy, specially at lower levels.
+- Do not get stuck trying to achieve a specific short term goal (e.g. getting a specific item). The goal is to explore as much as possible.
+- If you haven't done anything for a long time, you will lose the game. So if you are stuck, try to do something different.
+- Do not try to tame your pet. Its already tamed.
 
 In a moment I will present a history of actions and observations from the game.
-Your goal is to get as far as possible in the game.
+Your goal is to get as far as possible in the game. Explore all possible areas. DO NOT FIXATE ON ONE ACTION/ STRATEGY FOR TOO LONG. KEEP THE GAME
+MOVING.
 
 PLAY!
 """.strip()

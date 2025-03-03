@@ -1,0 +1,73 @@
+{
+    "task": "NetHackChallenge-v0",
+    "action_frequency": {
+        "open": 2,
+        "northeast": 5,
+        "north": 5,
+        "east": 8,
+        "remove": 2,
+        "e": 2,
+        "puton": 1,
+        "r": 1,
+        "quaff": 1,
+        "f": 1,
+        "northwest": 1,
+        "zap": 6,
+        "c": 10,
+        "south": 5,
+        "read": 1,
+        "j": 1,
+        "kick": 3,
+        "wield": 1,
+        "west": 1,
+        "search": 6
+    },
+    "input_tokens": 615121,
+    "output_tokens": 10116,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 63,
+    "failed_candidates": [],
+    "score": 0,
+    "depth": 0,
+    "gold": 0,
+    "experience_level": 0,
+    "time": 0,
+    "dlvl_list": [
+        "Dlvl:1"
+    ],
+    "xplvl_list": [
+        "Xp:1"
+    ],
+    "highest_achievement": null,
+    "progression": 0.0,
+    "end_reason": "RUNNING: died. Killed by a newt.",
+    "process_num": "ForkProcess-10",
+    "seed": 4217558542,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 5,
+        "max_icl_history": 1000,
+        "cache_icl": false,
+        "embedding_model": "all-MiniLM-L6-v2",
+        "nethack_wiki_index": "faiss.index",
+        "nethack_wiki_store": "processed_wiki_self.json",
+        "top_k": 3
+    },
+    "client": {
+        "client_name": "gemini",
+        "model_id": "gemini-2.0-flash",
+        "base_url": "http://localhost:8080/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 4096
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}
