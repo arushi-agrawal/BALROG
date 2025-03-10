@@ -1,5 +1,5 @@
 agent: 
-  type: cot            # Type of agent to use (e.g., 'naive', 'cot', etc.)
+  type: robust_cot_rag            # Type of agent to use (e.g., 'naive', 'cot', etc.)
   remember_cot: True     # Whether the agent should remember its reasoning across turns
   max_history: 16        # Maximum number of previous turns to keep in the dialogue history
   max_image_history: 0   # Maximum number of images to keep in the history

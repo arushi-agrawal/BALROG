@@ -9,6 +9,7 @@ from .naive import NaiveAgent
 from .robust_naive import RobustNaiveAgent
 from .robust_cot import RobustCoTAgent
 from .robust_cot_improved import RobustCoTImprovedAgent
+from .robust_cot_rag import RobustCoTRAGAgent
 
 import logging
 logger = logging.getLogger(__name__)
@@ -62,5 +63,7 @@ class AgentFactory:
             return RobustCoTAgent(client_factory, prompt_builder, config=self.config)
         elif self.config.agent.type == "robust_cot_improved":
             return RobustCoTImprovedAgent(client_factory, prompt_builder, config=self.config)
+        elif self.config.agent.type == "robust_cot_rag":
+            return RobustCoTRAGAgent(client_factory, prompt_builder, config=self.config)
         else:
             raise ValueError(f"Unknown agent type: {self.config.agent}")

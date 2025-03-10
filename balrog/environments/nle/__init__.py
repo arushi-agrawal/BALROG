@@ -124,10 +124,11 @@ Tips:
 - Do not get stuck trying to achieve a specific short term goal (e.g. getting a specific item). The goal is to explore as much as possible.
 - If you haven't done anything for a long time, you will lose the game. So if you are stuck, try to do something different.
 - Do not try to tame your pet. Its already tamed.
+- Taking the stairs up without Amulet of Yendor will quit the game and you will lose. Do not take the stairs up without the Amulet of Yendor. You can go down the stairs without the Amulet of Yendor.
+- Learn the special abilities of your character class and use them to your advantage.
 
 In a moment I will present a history of actions and observations from the game.
-Your goal is to get as far as possible in the game. Explore all possible areas. DO NOT FIXATE ON ONE ACTION/ STRATEGY FOR TOO LONG. KEEP THE GAME
-MOVING.
+Your goal is to get as far as possible in the game. DO NOT FIXATE ON ONE ACTION/ STRATEGY FOR TOO LONG. KEEP THE GAME MOVING. Do not be scared of exploring dark areas.
 
 PLAY!
 """.strip()
