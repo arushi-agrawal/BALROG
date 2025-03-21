@@ -10,6 +10,9 @@ from .robust_naive import RobustNaiveAgent
 from .robust_cot import RobustCoTAgent
 from .robust_cot_improved import RobustCoTImprovedAgent
 from .robust_cot_rag import RobustCoTRAGAgent
+from .chain_of_thought_rag import ChainOfThoughtRAGAgent
+from .naive_rag import NaiveRAGAgent
+from .robust_naive_rag import RobustNaiveRAGAgent
 
 import logging
 logger = logging.getLogger(__name__)
@@ -49,8 +52,12 @@ class AgentFactory:
 
         if self.config.agent.type == "naive":
             return NaiveAgent(client_factory, prompt_builder)
+        if self.config.agent.type == "naive_rag":
+            return NaiveRAGAgent(client_factory, prompt_builder, config=self.config)
         elif self.config.agent.type == "cot":
             return ChainOfThoughtAgent(client_factory, prompt_builder, config=self.config)
+        elif self.config.agent.type == "cot_rag":
+            return ChainOfThoughtRAGAgent(client_factory, prompt_builder, config=self.config)
         elif self.config.agent.type == "dummy":
             return DummyAgent(client_factory, prompt_builder)
         elif self.config.agent.type == "custom":
@@ -59,6 +66,8 @@ class AgentFactory:
             return FewShotAgent(client_factory, prompt_builder, self.config.agent.max_icl_history)
         elif self.config.agent.type == "robust_naive":
             return RobustNaiveAgent(client_factory, prompt_builder)
+        elif self.config.agent.type == "robust_naive_rag":
+            return RobustNaiveRAGAgent(client_factory, prompt_builder, config=self.config)
         elif self.config.agent.type == "robust_cot":
             return RobustCoTAgent(client_factory, prompt_builder, config=self.config)
         elif self.config.agent.type == "robust_cot_improved":

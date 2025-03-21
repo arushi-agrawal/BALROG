@@ -128,7 +128,7 @@ Tips:
 - Learn the special abilities of your character class and use them to your advantage.
 
 In a moment I will present a history of actions and observations from the game.
-Your goal is to get as far as possible in the game. DO NOT FIXATE ON ONE ACTION/ STRATEGY FOR TOO LONG. KEEP THE GAME MOVING. Do not be scared of exploring dark areas.
+Your goal is to get as far as possible in the game. DO NOT FIXATE ON ONE ACTION/ STRATEGY FOR TOO LONG. KEEP THE GAME MOVING.
 
 PLAY!
 """.strip()
