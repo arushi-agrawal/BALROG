@@ -11,11 +11,11 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-class ChainOfThoughtRAGAgent(BaseAgent):
+class RobustCoTImprovedRAGAgent(BaseAgent):
     """An agent that performs actions using a chain-of-thought reasoning process."""
 
     def __init__(self, client_factory: LLMClientWrapper, prompt_builder, config):
-        """Initialize the ChainOfThoughtRAGAgent with a client, prompt builder, and configuration.
+        """Initialize the ChainOfThoughtImprovedAgent with a client, prompt builder, and configuration.
 
         Args:
             client_factory (LLMClientWrapper): A factory for creating the LLM client instance.
@@ -23,10 +23,9 @@ class ChainOfThoughtRAGAgent(BaseAgent):
             config: Configuration object containing settings for the agent.
         """
         super().__init__(client_factory, prompt_builder)
-        self.client = client_factory()
+        self.remember_cot = config.agent.remember_cot
         self.retriever = NethackWikiSearch(config)
         self.retriever.load_index()
-        self.remember_cot = config.agent.remember_cot
 
     def act(self, obs, prev_action=None):
         """Generate the next action using chain-of-thought reasoning based on the current observation.
@@ -116,14 +115,21 @@ class ChainOfThoughtRAGAgent(BaseAgent):
 
         messages[-1].content += "\n\n" + rag_usage_prompt
 
-
-        # Add CoT-specific instructions to the prompt
+        # Updated instructions: chain of thought + strict output format
         cot_instructions = """
-First think about what's the best course of action step by step.
-Then, you must choose exactly one of the listed actions and output a single action at the end of the message in the form of: ACTION: <action>
+First, think about the best course of action.
+Then, you must choose exactly one of the listed actions and output it strictly in the following format:
+
+<|ACTION|>YOUR_CHOSEN_ACTION<|END|>
+
+Replace YOUR_CHOSEN_ACTION with the chosen action. Verify that the action you provided is a valid action from the list of actions given.
+
+In case you want to choose the action "go forward", you must output:
+<|ACTION|>go forward<|END|>
 Explain your action choice in not more than 20 words.
         """.strip()
 
+        # Add the updated instructions to the last message
         messages[-1].content += "\n\n" + cot_instructions
 
         # Generate the CoT reasoning
@@ -131,7 +137,6 @@ Explain your action choice in not more than 20 words.
 
         # Extract the final answer from the CoT reasoning
         final_answer = self._extract_final_answer(cot_reasoning)
-        # logger.info(f"Final answer: {final_answer}")
 
         return final_answer
 
@@ -142,15 +147,25 @@ Explain your action choice in not more than 20 words.
             reasoning (LLMResponse): The response containing CoT reasoning and action.
 
         Returns:
-            LLMResponse: The response with the extracted final action.
+            LLMResponse: The response with the extracted final action in `completion`
+                         and the entire chain-of-thought in `reasoning`.
         """
+        # Make a copy so we don't mutate the original
+        final_answer = copy.deepcopy(reasoning)
 
-        def filter_letters(input_string):
-            return re.sub(r"[^a-zA-Z\s:]", "", input_string)
+        # Store the entire chain-of-thought (raw completion) in `reasoning`
+        final_answer = final_answer._replace(reasoning=reasoning.completion)
 
-        answer = copy.deepcopy(reasoning)
-        self.prompt_builder.update_reasoning(reasoning.completion)
-        answer = answer._replace(reasoning=answer.completion)
-        answer = answer._replace(completion=filter_letters(answer.completion).split("ACTION:")[-1].strip())
+        # Now parse the strict action format: <|ACTION|> ... <|END|>
+        completion_text = reasoning.completion
+        match = re.search(r"<\|ACTION\|>(.*?)<\|END\|>", completion_text, re.DOTALL)
+        if match:
+            extracted_action = match.group(1).strip()
+        else:
+            # Fallback to the entire completion if not matched
+            extracted_action = "Failed to obtain a valid action from the reasoning."
 
-        return answer
+        # Replace the final `completion` with only the extracted action
+        final_answer = final_answer._replace(completion=extracted_action)
+
+        return final_answer

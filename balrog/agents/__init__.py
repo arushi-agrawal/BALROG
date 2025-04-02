@@ -13,6 +13,7 @@ from .robust_cot_rag import RobustCoTRAGAgent
 from .chain_of_thought_rag import ChainOfThoughtRAGAgent
 from .naive_rag import NaiveRAGAgent
 from .robust_naive_rag import RobustNaiveRAGAgent
+from .robust_cot_improved_rag import RobustCoTImprovedRAGAgent
 
 import logging
 logger = logging.getLogger(__name__)
@@ -70,6 +71,8 @@ class AgentFactory:
             return RobustNaiveRAGAgent(client_factory, prompt_builder, config=self.config)
         elif self.config.agent.type == "robust_cot":
             return RobustCoTAgent(client_factory, prompt_builder, config=self.config)
+        elif self.config.agent.type == "robust_cot_improved_rag":
+            return RobustCoTImprovedRAGAgent(client_factory, prompt_builder, config=self.config)
         elif self.config.agent.type == "robust_cot_improved":
             return RobustCoTImprovedAgent(client_factory, prompt_builder, config=self.config)
         elif self.config.agent.type == "robust_cot_rag":
