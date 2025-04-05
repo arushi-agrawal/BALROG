@@ -108,18 +108,6 @@ class NaiveRAGAgent(BaseAgent):
 
         messages[-1].content += "\n\n" + rag_usage_prompt
 
-
-
-
-
-
-
-
-
-
-
-
-
         naive_instruction = """
 You always have to output one of the above actions at a time and no other text. You always have to output an action until the episode terminates.
         """.strip()

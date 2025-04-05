@@ -120,11 +120,8 @@ Tips:
 - If you keep moving in the same direction, you will eventually hit a wall and stop moving. Your message might be: "It's solid stone", or "It's a wall". Change your action to move in another direction to continue exploring the environment.
 - Read the language observation carefully and look at ascii map or image observation provided to decide the next action to take and where to move next.
 - You can attack monsters by moving into them.
-- Do not get stuck trying to engrave Elbereth. It is not always the best strategy, specially at lower levels.
-- Do not get stuck trying to achieve a specific short term goal (e.g. getting a specific item). The goal is to explore as much as possible.
-- If you haven't done anything for a long time, you will lose the game. So if you are stuck, try to do something different.
-- Do not try to tame your pet. Its already tamed.
-- Taking the stairs up without Amulet of Yendor will quit the game and you will lose. Do not take the stairs up without the Amulet of Yendor. You can go down the stairs without the Amulet of Yendor.
+- Do not get stuck trying to achieve a specific short term goal. The goal is to explore as much as possible.
+- Taking the stairs up without Amulet of Yendor will quit the game and you will lose.
 - Learn the special abilities of your character class and use them to your advantage.
 
 In a moment I will present a history of actions and observations from the game.

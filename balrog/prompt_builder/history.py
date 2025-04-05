@@ -16,7 +16,6 @@ class Message:
 
 class HistoryPromptBuilder:
     """Builds a prompt with a history of observations, actions, and reasoning.
-
     Maintains a configurable history of text, images, and chain-of-thought reasoning to
     construct prompt messages for conversational agents.
     """
@@ -77,7 +76,6 @@ class HistoryPromptBuilder:
 
     def get_prompt(self, icl_episodes=False) -> List[Message]:
         """Generate a list of Message objects representing the prompt.
-
         Returns:
             List[Message]: Messages constructed from the event history.
         """
