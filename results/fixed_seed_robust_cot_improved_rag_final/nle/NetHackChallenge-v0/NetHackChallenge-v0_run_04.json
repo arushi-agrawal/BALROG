@@ -1,0 +1,85 @@
+{
+    "task": "NetHackChallenge-v0",
+    "action_frequency": {
+        "pickup": 20,
+        "east": 302,
+        "west": 258,
+        "south": 109,
+        "search": 145,
+        "southwest": 21,
+        "open": 34,
+        "north": 114,
+        "up": 82,
+        "far west": 1,
+        "n": 5,
+        "northwest": 18,
+        "down": 28,
+        "eat": 11,
+        "y": 4,
+        "kick": 1,
+        "swap": 4,
+        "esc": 4,
+        "fight": 9,
+        "southeast": 3,
+        "northeast": 3,
+        "droptype": 16,
+        "d": 3,
+        "a": 7,
+        "A": 8,
+        "e": 1,
+        "pray": 7,
+        "quaff": 2,
+        "h": 1,
+        "g": 1
+    },
+    "input_tokens": 7388040,
+    "output_tokens": 34081,
+    "done": true,
+    "episode_return": 54.0,
+    "num_steps": 1222,
+    "failed_candidates": [
+        "yes"
+    ],
+    "score": 0,
+    "depth": 0,
+    "gold": 0,
+    "experience_level": 0,
+    "time": 0,
+    "dlvl_list": [
+        "Dlvl:1"
+    ],
+    "xplvl_list": [
+        "Xp:1"
+    ],
+    "highest_achievement": null,
+    "progression": 0.0,
+    "end_reason": "RUNNING: was poisoned. Poisoned by a rotted sewer rat corpse, while praying.",
+    "process_num": "ForkProcess-1",
+    "seed": 73,
+    "agent": {
+        "type": "robust_cot_improved_rag",
+        "remember_cot": true,
+        "max_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 5,
+        "max_icl_history": 1000,
+        "cache_icl": false,
+        "embedding_model": "all-MiniLM-L6-v2",
+        "nethack_wiki_index": "faiss.index",
+        "nethack_wiki_store": "processed_wiki_self.json",
+        "top_k": 3
+    },
+    "client": {
+        "client_name": "gemini",
+        "model_id": "gemini-2.0-flash",
+        "base_url": "http://localhost:8080/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 4096
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "task": "NetHackChallenge-v0",
+    "action_frequency": {
+        "pickup": 8,
+        "east": 304,
+        "south": 122,
+        "west": 247,
+        "north": 109,
+        "up": 68,
+        "northeast": 13,
+        "southwest": 32,
+        "northwest": 29,
+        "n": 14,
+        "down": 27,
+        "search": 108,
+        "open": 42,
+        "southeast": 10,
+        "fight": 43,
+        "esc": 4,
+        "quaff": 1,
+        "g": 1,
+        "pray": 10,
+        "y": 5,
+        "quiver": 2,
+        "c": 3,
+        "droptype": 7,
+        "e": 1,
+        "a": 7,
+        "d": 2,
+        "throw": 3,
+        "kick": 1,
+        "wield": 2,
+        "h": 1,
+        "eat": 3
+    },
+    "input_tokens": 7657905,
+    "output_tokens": 34656,
+    "done": true,
+    "episode_return": 110.0,
+    "num_steps": 1229,
+    "failed_candidates": [
+        "eastnortheast",
+        "minus"
+    ],
+    "score": 0,
+    "depth": 0,
+    "gold": 0,
+    "experience_level": 0,
+    "time": 0,
+    "dlvl_list": [
+        "Dlvl:1"
+    ],
+    "xplvl_list": [
+        "Xp:1",
+        "Xp:2"
+    ],
+    "highest_achievement": "Xp:2",
+    "progression": 0.01847840456172601,
+    "end_reason": "RUNNING: died. Killed by the wrath of Anu.",
+    "process_num": "ForkProcess-8",
+    "seed": 73,
+    "agent": {
+        "type": "robust_cot_improved_rag",
+        "remember_cot": true,
+        "max_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 5,
+        "max_icl_history": 1000,
+        "cache_icl": false,
+        "embedding_model": "all-MiniLM-L6-v2",
+        "nethack_wiki_index": "faiss.index",
+        "nethack_wiki_store": "processed_wiki_self.json",
+        "top_k": 3
+    },
+    "client": {
+        "client_name": "gemini",
+        "model_id": "gemini-2.0-flash",
+        "base_url": "http://localhost:8080/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 4096
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

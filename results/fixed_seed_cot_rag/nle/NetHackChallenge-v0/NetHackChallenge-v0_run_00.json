@@ -1,0 +1,93 @@
+{
+    "task": "NetHackChallenge-v0",
+    "action_frequency": {
+        "pickup": 40,
+        "east": 88,
+        "north": 33,
+        "west": 60,
+        "south": 54,
+        "southeast": 3,
+        "southwest": 19,
+        "up": 10,
+        "northwest": 14,
+        "look": 3,
+        "search": 63,
+        "swap": 2,
+        "open": 5,
+        "droptype": 139,
+        "d": 11,
+        "a": 9,
+        "A": 1,
+        "space": 1,
+        "takeoff": 1,
+        "esc": 19,
+        "down": 1,
+        "b": 15,
+        "c": 7,
+        "wield": 35,
+        "inventory": 5,
+        "northeast": 11,
+        "drop": 1,
+        "wear": 1,
+        "e": 1,
+        "kick": 3,
+        "fight": 4,
+        "apply": 3,
+        "f": 3
+    },
+    "input_tokens": 4378529,
+    "output_tokens": 14333,
+    "done": true,
+    "episode_return": 16.0,
+    "num_steps": 665,
+    "failed_candidates": [
+        "westnorthwest",
+        "westnorthwest",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "score": 0,
+    "depth": 0,
+    "gold": 0,
+    "experience_level": 0,
+    "time": 0,
+    "dlvl_list": [
+        "Dlvl:1"
+    ],
+    "xplvl_list": [
+        "Xp:1"
+    ],
+    "highest_achievement": null,
+    "progression": 0.0,
+    "end_reason": "ABORTED: quit.",
+    "process_num": "ForkProcess-8",
+    "seed": 73,
+    "agent": {
+        "type": "cot_rag",
+        "remember_cot": true,
+        "max_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 5,
+        "max_icl_history": 1000,
+        "cache_icl": false,
+        "embedding_model": "all-MiniLM-L6-v2",
+        "nethack_wiki_index": "faiss.index",
+        "nethack_wiki_store": "processed_wiki_self.json",
+        "top_k": 3
+    },
+    "client": {
+        "client_name": "gemini",
+        "model_id": "gemini-2.0-flash",
+        "base_url": "http://localhost:8080/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 4096
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}
