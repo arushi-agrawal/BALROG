@@ -47,6 +47,7 @@ Replace YOUR_CHOSEN_ACTION with the chosen action. Verify that the action you pr
 
 In case you want to choose the action "go forward", you must output:
 <|ACTION|>go forward<|END|>
+Explain your action choice in not more than 20 words.
         """.strip()
 
         # Add the updated instructions to the last message

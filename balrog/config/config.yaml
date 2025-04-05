@@ -1,5 +1,5 @@
 agent: 
-  type: cot            # Type of agent to use (e.g., 'naive', 'cot', etc.)
+  type: robust_cot_improved_rag     # Type of agent to use (e.g., 'naive', 'cot', etc.)
   remember_cot: True     # Whether the agent should remember its reasoning across turns
   max_history: 16        # Maximum number of previous turns to keep in the dialogue history
   max_image_history: 0   # Maximum number of images to keep in the history
@@ -31,7 +31,6 @@ eval:
 
 client:
   client_name: gemini           # LLM client to use (e.g., 'openai', 'gemini', 'claude')
-  # model_id: gemini-2.0-pro-exp-02-05
   model_id: gemini-2.0-flash     # Model identifier (e.g., 'gpt-4', 'gpt-3.5-turbo')
   base_url: http://localhost:8080/v1   # Base URL for the API (if using a local server)
   generate_kwargs:
