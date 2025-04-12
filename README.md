@@ -49,6 +49,13 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 Check out [vLLM](https://github.com/vllm-project/vllm) for more options on how to serve your models fast and efficiently.
 
+## Agents added
+1. Naive RAG - Integrates RAG in Naive Agent
+2. Robust Naive RAG - Integrates RAG in Robust Naive Agent
+3. COT RAG - Integrates RAG in COT Agent
+4. Robust COT RAG - Integrates RAG in Robust COT Agent
+5. Robust COT Improved - New Agent developed by us, with enhanced prompts.
+
 ## 🛜 Evaluate using API
 
 We support how of the box clients for OpenAI, Anthropic and Google Gemini APIs. If you want to evaluate an agent using one of these APIs, you first have to set up your API key in one of two ways:
@@ -67,17 +74,10 @@ You can then run the evaluation with:
 
 ```bash
 python eval.py \
-  agent.type=naive \
+  agent.type=robust_cot_improved_rag \
   agent.max_image_history=0 \
   agent.max_history=16 \
   eval.num_workers=16 \
-  client.client_name=openai \
-  client.model_id=gpt-4o-mini-2024-07-18
+  client.client_name=gemini \
+  client.model_id=gemini-2.0-flash
 ```
-
-## Agents added
-1. Naive RAG - Integrates RAG in Naive Agent
-2. Robust Naive RAG - Integrates RAG in Robust Naive Agent
-3. COT RAG - Integrates RAG in COT Agent
-4. Robust COT RAG - Integrates RAG in Robust COT Agent
-5. Robust COT Improved - New Agent developed by us, with enhanced prompts.
