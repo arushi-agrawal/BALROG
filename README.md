@@ -1,4 +1,4 @@
-# Wiki-BALROG: Enhancing Language Model Agents Through Retrieval-Augmented Game Knowledge
+# wiki-BALROG: Enhancing Language Model Agents Through Retrieval-Augmented Game Knowledge
 
 BALROG is a novel benchmark evaluating agentic LLM and VLM capabilities on long-horizon interactive tasks using reinforcement learning environments. We introduce Wiki-BALROG that enhances the LLMs by dynamically integrating game knowledge from the NetHack Wiki into the BALROG agents.
 Our agents outperform the benchmarks set by [BALROG](https://arxiv.org/abs/2411.13543).
@@ -11,7 +11,7 @@ We advise using conda for the installation
 conda create -n balrog python=3.10 -y
 conda activate balrog
 
-git clone https://github.com/balrog-ai/BALROG.git
+git clone https://github.com/arushi-agrawal/wiki-BALROG.git
 cd BALROG
 pip install -e .
 balrog-post-install
