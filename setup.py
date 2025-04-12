@@ -35,6 +35,8 @@ setup(
         "tatsu==5.8.3",
         "minigrid @ git+https://github.com/BartekCupial/Minigrid.git",
         "baba @ git+https://github.com/nacloos/baba-is-ai.git",
+        "sentence_transformers",
+        "faiss-cpu"
     ],
     entry_points={
         "console_scripts": [
