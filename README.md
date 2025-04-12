@@ -23,6 +23,13 @@ On Mac make sure you have `wget` installed for the `balrog-post-install`
 
 We have provided some docker images. Please see the [relevant README](docker/README.md).
 
+## Agents added
+1. Naive RAG - Integrates RAG in Naive Agent
+2. Robust Naive RAG - Integrates RAG in Robust Naive Agent
+3. COT RAG - Integrates RAG in COT Agent
+4. Robust COT RAG - Integrates RAG in Robust COT Agent
+5. Robust COT Improved - New Agent developed by us, with enhanced prompts.
+
 ## ⚡️ Evaluate using vLLM locally
 
 We support running LLMs/VLMs locally using [vLLM](https://github.com/vllm-project/vllm). You can spin up a vLLM client and evaluate your agent on BALROG in the following way:
@@ -48,13 +55,6 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 ```
 
 Check out [vLLM](https://github.com/vllm-project/vllm) for more options on how to serve your models fast and efficiently.
-
-## Agents added
-1. Naive RAG - Integrates RAG in Naive Agent
-2. Robust Naive RAG - Integrates RAG in Robust Naive Agent
-3. COT RAG - Integrates RAG in COT Agent
-4. Robust COT RAG - Integrates RAG in Robust COT Agent
-5. Robust COT Improved - New Agent developed by us, with enhanced prompts.
 
 ## 🛜 Evaluate using API
 
