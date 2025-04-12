@@ -1,21 +1,7 @@
-<p align="center">
-  <a href="https://balrogai.com">
-    <img src="docs/imgs/balrog_banner.png" width="50%" alt="BALROG Agent" />
-  </a>
-</p>
+# Wiki-BALROG: Enhancing Language Model Agents Through Retrieval-Augmented Game Knowledge
 
----
-
-# BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games
-
-BALROG is a novel benchmark evaluating agentic LLM and VLM capabilities on long-horizon interactive tasks using reinforcement learning environments. Check out how current models fare on our [leaderboard](https://balrogai.com). You can read more about BALROG in our [paper](https://arxiv.org/abs/2411.13543).
-
-## Features
-
-- Comprehensive evaluation of agentic abilities
-- Support for both language and vision-language models
-- Integration with popular AI APIs and local deployment
-- Easy integration for custom agents, new environments and new models
+BALROG is a novel benchmark evaluating agentic LLM and VLM capabilities on long-horizon interactive tasks using reinforcement learning environments. We introduce Wiki-BALROG that enhances the LLMs by dynamically integrating game knowledge from the NetHack Wiki into the BALROG agents.
+Our agents outperform the benchmarks set by [BALROG](https://arxiv.org/abs/2411.13543).
 
 ## Installation
 
@@ -89,27 +75,9 @@ python eval.py \
   client.model_id=gpt-4o-mini-2024-07-18
 ```
 
-## Documentation
-
-- [Evaluation Guide](https://github.com/balrog-ai/BALROG/blob/main/docs/evaluation.md) - Detailed instructions for various evaluation scenarios
-- [Agent Development](https://github.com/balrog-ai/BALROG/blob/main/docs/agents.md) - Tutorial on creating custom agents
-- [Few Shot Learning](https://github.com/balrog-ai/BALROG/blob/main/docs/few_shot_learning.md) - Instructions on how to run Few Shot Learning
-
-We welcome contributions! Please see our [Contributing Guidelines](https://github.com/balrog-ai/BALROG/blob/main/docs/contribution.md) for details.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Citation
-
-If you use BALROG in any of your work, please cite:
-
-```
-@article{paglieri2024balrog,
-  title={Benchmarking Agentic LLM and VLM Reasoning On Games},
-  author={Paglieri, Davide and Cupia{\l}, Bart{\l}omiej and Coward, Sam and Piterbarg, Ulyana and Wo{\l}czyk, Maciej and Khan, Akbir and Pignatelli, Eduardo and Kuci{\'n}ski, {\L}ukasz and Pinto, Lerrel and Fergus, Rob and Foerster, Jakob Nicolaus and Parker-Holder, Jack and Rockt{\"a}schel, Tim},
-  journal={arXiv preprint arXiv:2411.13543},
-  year={2024}
-}
-```
+## Agents added
+1. Naive RAG - Integrates RAG in Naive Agent
+2. Robust Naive RAG - Integrates RAG in Robust Naive Agent
+3. COT RAG - Integrates RAG in COT Agent
+4. Robust COT RAG - Integrates RAG in Robust COT Agent
+5. Robust COT Improved - New Agent developed by us, with enhanced prompts.
